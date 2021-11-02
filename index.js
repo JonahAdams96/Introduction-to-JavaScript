@@ -36,7 +36,15 @@ Do the following:
 
    HINT: no function required
 */
-
+//plants are dry then need water//
+const plant = 'tulips';
+const time = 'water time';
+ 
+if(plant === 'dry'){
+console.log(time);
+}else(plant === 'wet');{
+  console.log('do not water');
+}
 
 
 
@@ -51,7 +59,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+const n ="1999";
+console.log(parseInt(n));
 
 
 
