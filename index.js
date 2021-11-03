@@ -166,8 +166,7 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-  /*add your code here*/
+function game(userScore, computerScore){
 }
 
 
@@ -183,9 +182,11 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(kilometers){
+ return kilometers*0.62137; 
 }
+console.log(miles);
+
 
 
 
@@ -197,9 +198,10 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm, ft){
+  return cm / 30.48;
 }
+console.log(feet);
 
 
 
@@ -213,9 +215,12 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(number){
+  for(let i =0; i<5; i++)
+  return number;
+  console.log("{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall");
 }
+console.log(annoyingSong);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -233,9 +238,26 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+let gradeCalc =  function (score, totalscore){
+ let percent = (score / totalscore) * 100
+ let letterGrade = 'A';
+ 
+   if( percent >= 90){
+    letterGrade = 'A'
+}else if (percent >= 80){
+  letterGrade ='B'
+}else if (percent >= 70){
+  letterGrade ='C'
+}else if (percent >= 60){
+  letterGrade ='D'
+}else {
+  letterGrade = 'F'
 }
+ return `You got ${letterGrade} with ${percent}`
+}
+let result = gradeCalc(45,100)
+console.log(result);
+
 
 
 
